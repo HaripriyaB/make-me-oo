@@ -26,3 +26,15 @@ He thought it'll be a good idea to convert this to Object Oriented Programming. 
 However, his trainer told him that what he did is not Object Oriented programming and asked Shivam to try again. 
 - Try to articulate problems with Shivam's OOP solution. (Write it somewhere and share it with your trainer)
 - Fork the project and fix the design related problem with Shivam's OOP solution. Share that with your trainer too.
+
+**Articulation**
+- The first thing came to my mind when I saw the `Point` class was the redundant setters.
+- The second thing was that `Point` class had only state and no behaviour.
+- The `DistanceAndDirectionCalculator` was having only the methods which acts like a helper class.
+- And finally there was no need for `DistanceAndDirectionCalculator` class since the `Point` class itself can be encapsulated with the necessary behaviours, i.e calculate distance and direction.
+
+**Modifications**
+- The `DistanceAndDirectionCalculator` class has been removed.
+- The `Point` class is updated with the methods(behaviours).
+- The setters were removed.
+- The test cases were updated accordingly.
